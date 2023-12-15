@@ -9,10 +9,13 @@
     "server": "hexo server"
   },
   "hexo": {
-    "version": ""
+    "version": "7.0.0"
   },
   "dependencies": {
     "hexo": "^7.0.0",
+    "hexo-asset-img": "github:yiyungent/hexo-asset-img#main",
+    "hexo-autotitle": "^1.0.1",
+    "hexo-excerpt": "^1.3.0",
     "hexo-generator-archive": "^2.0.0",
     "hexo-generator-category": "^2.0.0",
     "hexo-generator-index": "^3.0.0",
