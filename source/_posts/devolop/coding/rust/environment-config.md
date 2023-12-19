@@ -15,3 +15,7 @@
 安装 MSVC 直接完整安装 C++ 桌面环境，否则可能会有坑
 
 ## 卸载
+
+```shell
+rustup self uninstall
+```

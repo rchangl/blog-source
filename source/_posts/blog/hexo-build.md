@@ -85,11 +85,12 @@ excerpt:
   depth: 10
 ```
 
-## 主题
+## Wikitten 主题
+
+有非常好的分类检索
 
 ```shell
-# clone this theme Wikitten into themes/
-cd your-hexo-directory-root
+cd your-hexo-directory
 git clone https://github.com/zthxxx/hexo-theme-Wikitten.git themes/Wikitten
 ```
 
@@ -100,6 +101,24 @@ git clone https://github.com/zthxxx/hexo-theme-Wikitten.git themes/Wikitten
 
 使用主题
 
+`theme: Wikitten`
+
+一些配合使用的插件：
+
 ```shell
-hexo config theme Wikitten
+hexo-autonofollow       // automatic make user open external links in new tab
+hexo-directory-category // automatic categorize article according to their file directory
+hexo-generator-feed     // generate Atom 1.0 or RSS 2.0 feed
+hexo-generator-json-content // generate a json content file for site search
+hexo-generator-sitemap  // generate sitemap
+```
+
+更多： <https://github.com/zthxxx/hexo-theme-Wikitten>
+
+### hexo-directory-category 插件
+
+Install :
+
+```shell
+npm install --save hexo-directory-category
 ```
