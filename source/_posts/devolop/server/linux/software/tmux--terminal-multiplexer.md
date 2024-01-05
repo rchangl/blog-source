@@ -25,16 +25,47 @@ $ brew install tmux
 
 ## 使用
 
-帮助：
+Tmux 会话管理：
 
 ```shell
-<Ctrl+b><?>
+tmux # 底部[0] 表示tmux伪窗口name ，再启动一个则为[1]（依次递增）
+tmux new -s <name> # 创建并指定 name ，底部提示变为指定的 name
+
+tmux detach # 分离会话，（窗口离开当前会话并保留会话）
+tmux attach -t <name> # 重接会话 进入某一个会话
+tmux switch -t <name> # 切换会话
+
+tmux kill-session -t <name> # 杀死某一个会话
+exit # 退出并kill当前会话，或快捷键 Ctrl+d
+
+tmux rename-session -t <old-name> <new-name> # 重命名会话
+```
+
+帮助命令：
+
+```shell
+<Ctrl+b> <?> # 查看帮助
 <esc> / <q> #退出帮助
+
+# 列出所有快捷键，及其对应的 Tmux 命令
+tmux list-keys
+
+# 列出所有 Tmux 命令及其参数
+tmux list-commands
+
+# 列出当前所有 Tmux 会话的信息
+tmux info
+
+# 重新加载当前的 Tmux 配置
+tmux source-file ~/.tmux.conf
 ```
 
-启动退出：
+一些快捷键：
 
 ```shell
-tmux
-exit # 或快捷键 Ctrl+d
+Ctrl+b d # 分离当前会话。
+Ctrl+b s # 列出所有会话。
+Ctrl+b $ # 重命名当前会话。
 ```
+
+还有一些窗口操作： [Tmux 使用教程 - 阮一峰的网络日志](https://www.ruanyifeng.com/blog/2019/10/tmux.html)
