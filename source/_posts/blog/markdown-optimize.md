@@ -5,11 +5,15 @@
 禁用部分规则：
 
 ```json
-"markdownlint.config": {
-    "MD024": false,
-    "MD045": false,
-    "no-hard-tabs": false
-}
+    "markdownlint.config": {
+        "MD014": false,
+        "MD024": false,
+        // "MD034": false, // 裸露URL
+        "MD036": false, // 不得单独使用字体强调（加粗等）
+        "MD040": false, // 代码块语言标记
+        "MD045": false,
+        "MD047": false // 文件结尾必须为空行
+    },
 ```
 
 ## VSCode 粘贴图片

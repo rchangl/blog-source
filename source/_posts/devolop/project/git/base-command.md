@@ -3,7 +3,7 @@
 ## 初始化
 
 ```shell
-git init
+git init    
 ```
 
 ## 分支
@@ -25,7 +25,7 @@ git merge <other-branch> # 分支合并
 ## commit
 
 ```shell
-git commit -a 'describe text' # 自动add并commit所有更改
+git commit -a -m 'describe text' # -a 自动add并commit所有更改
 ```
 
 ## push
