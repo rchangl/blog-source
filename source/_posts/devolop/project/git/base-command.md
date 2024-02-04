@@ -25,7 +25,7 @@ git merge <other-branch> # 分支合并
 ## commit
 
 ```shell
-git commit -a -m 'describe text' # -a 自动add并commit所有更改
+git commit -a -m 'describe text' # -a 修改后的文件自动add，但新添加的文件不行
 ```
 
 ## push
